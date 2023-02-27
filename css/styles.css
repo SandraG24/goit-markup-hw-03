@@ -1,18 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 
 /* -----------Header--------------*/
 .header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -25,6 +58,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin: 24px 0;
+  margin-right: 76px;
 }
 .header-logo > span {
   font-family: "Raleway", sans-serif;
@@ -37,8 +72,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  display: block;
+  margin: 24px 0;
 }
 .header-list {
+  margin: 24px 0;
+  display: flex;
+  gap: 40px;
 }
 .header-link {
   font-weight: 500;
@@ -54,6 +94,8 @@ body {
 }
 
 .header-aside {
+  margin: 24px 0;
+  display: flex;
 }
 .header-email {
   font-style: normal;
@@ -62,6 +104,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  margin: 24px 0;
+  margin-left: auto;
+  margin-right: 40px;
 }
 .header-email:hover,
 .header-email:focus {
@@ -75,13 +121,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  margin: 24px 0;
 }
 
 /* -----------Hero ---------------*/
 .page-hero {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero {
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -101,6 +152,9 @@ body {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 48px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -110,12 +164,17 @@ body {
 
 /* -----------Features------------------ */
 .features {
+  padding: 120px 0;
 }
 .features-list {
 }
 .features-item {
 }
+.features-item:not(:last-child) {
+  margin-right: 24px;
+}
 .features-subtitle {
+  width: 264px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -123,10 +182,12 @@ body {
   color: #2e2f42;
 }
 .features-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 8px;
 }
 .visually-hidden {
   position: absolute;
@@ -159,6 +220,7 @@ body {
 /* ----------Team ---------------------*/
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-tittle {
   font-size: 36px;
@@ -190,6 +252,8 @@ body {
 /* ----------------Footer ------------------ */
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -214,15 +278,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: block;
 }
 .footer-text {
+  width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  margin-top: 16px;
 }
-
+/* ----------------Filters ------------------ */
 .filter {
 }
 .filter-list {
@@ -243,6 +310,8 @@ body {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
+  background: #f4f4fd;
+  padding: 12px 24px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -260,9 +329,14 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+/* ----------------Row list ------------------ */
+.row {
+}
 .row-list {
 }
 .row-item {
+  width: 360px;
 }
 .row-subtitle {
   font-weight: 500;
@@ -277,4 +351,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 8px;
 }
