@@ -208,7 +208,7 @@ img {
 
 /* ---------------Benefits------------------- */
 .benefits {
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 .benefits-tittle {
   font-size: 36px;
@@ -217,7 +217,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .benefits-list {
   display: flex;
@@ -236,7 +236,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
